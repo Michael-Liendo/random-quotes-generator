@@ -18,6 +18,10 @@ let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 pushQuote.innerHTML = randomQuote;
 
+// Initial background color
+let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+document.body.style.background = `#${randomColor}`;
+
 // Event listener
 button.addEventListener("click", handlerCallFunctions);
 
